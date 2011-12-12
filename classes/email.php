@@ -2,7 +2,7 @@
 /**
  * Email module
  *
- * Ported from Kohana 2.2.3 Core to Kohana 3.0 module
+ * Ported from Kohana 2.2.3 Core to Kohana 3.1 module
  * 
  * Updated to use Swiftmailer 4.0.4
  *
@@ -31,7 +31,7 @@ class Email {
 		}
 
 		// Load default configuration
-		($config === NULL) and $config = Kohana::config('email');
+		($config === NULL) AND $config = Kohana::$config->load('email');
 		
 		switch ($config['driver'])
 		{
