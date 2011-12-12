@@ -1,4 +1,4 @@
-Email Module For Kohana 3.0
+Email Module For Kohana 3.1
 =================================
 
 This is a direct port of the email helper from Kohana 2.3.3 source code.
